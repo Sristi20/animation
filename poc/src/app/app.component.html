@@ -1,0 +1,22 @@
+<div class="parent">
+  <div class="child">
+    <h3>Changing background color by directive</h3>
+    <p appHighlight >Highlight me </p>
+  </div>
+  <div class="child">
+    <h3>Passing values into an attribute directive and Handling user events</h3>
+    <p [appDirective1]="color1" >Highlight me </p>
+  </div>
+  <div class="child">
+    <h3>Setting the value with user input</h3>
+<div>
+  <input type="radio" name="colors" (click)="color2='lightgreen'">Green
+  <input type="radio" name="colors" (click)="color2='yellow'">Yellow
+  <input type="radio" name="colors" (click)="color2='cyan'">Cyan
+</div>
+<p [appDirective2]="color2">Highlight me!</p>
+  </div>
+</div>
+<a routerLink="/search">Search</a>
+<a routerLink="/animation">Animation</a>
+<router-outlet></router-outlet>
