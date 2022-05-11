@@ -1,0 +1,14 @@
+<div
+addItem1() {
+    var listitem = "ListItem " + this.list_order1;
+    this.list_order1++;
+    this.listItem1.push(listitem);
+  }
+  removeItem1() {
+    this.listItem1.length -= 1;
+    if(this.listItem1.length===0){
+      this.list_order1=1;
+    }
+  }
+}
+></div>
